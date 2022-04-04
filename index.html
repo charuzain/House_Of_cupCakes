@@ -50,8 +50,13 @@
     </nav>
     <!-- end of navbar -->
 
-    <h1>House Of CupCakes !!</h1>
-    <div class="container">
+    <!-- <h1>House Of CupCakes !!</h1> -->
+    <section class="container-fluid px-0">
+      <!-- .container goes only part of the way across the screen whwere as fluid container goes all thw ay across the screen  -->
+
+      <!-- to remove the padding from left and right use px-0 class
+      to remove from top and botton use py class -->
+
       <!-- <div class="row">
         <div class="col-6">House of candy</div>
 
@@ -59,8 +64,38 @@
           <img src="icons/cupcake1.jpg" alt="cupckae image" class="img-fluid" />
         </div>
       </div> -->
+      <div class="row align-items-center">
+        <!-- to align an item vertically in centre use align-items class -->
+        <!-- to hide an element use d-none -->
+        <div
+          id="cupcakeGroup"
+          class="col-lg-6 text-white text-center d-none d-lg-block"
+        >
+          <h2>House <span> /</span> of <span> /</span> cupcakes</h2>
+          <h2>House <span> /</span> of <span> /</span> cupcakes</h2>
+          <h2>House <span> /</span> of <span> /</span> cupcakes</h2>
+          <h2>House <span> /</span> of <span> /</span> cupcakes</h2>
+        </div>
+        <!-- to align a text in the center use text-center class -->
+        <div class="col-lg-6 g-0">
+          <img src="icons/image12.jpg" class="img-fluid w-auto" alt="" />
+        </div>
+      </div>
+
       <div class="row">
         <div class="col-6">House of candy</div>
+
+        <div class="col-6">
+          <img src="icons/cupcake1.jpg" alt="cupckae image" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h1>
+            House of candy
+            <!-- <i class="fa-solid fa-cupcake"></i> -->
+          </h1>
+        </div>
         <div class="col-6">
           <img class="img-fluid" src="icons/image2.jpg" alt="" />
         </div>
@@ -117,19 +152,14 @@
           <img src="icons/image12.jpg" class="img-fluid" alt="" />
         </div>
       </div>
-      <div class="row">
-        <div class="col-6">House of candy</div>
-        <div class="col-6">
-          <img src="icons/image13.jpg" class="img-fluid" alt="" />
-        </div>
-      </div>
+
       <div class="row">
         <div class="col-6">House of candy</div>
         <div class="col-6">
           <img src="icons/image14.jpg" class="img-fluid" alt="" />
         </div>
       </div>
-    </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
