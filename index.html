@@ -103,15 +103,49 @@
     </section>
 
     <!-- image 3 -->
-    <section class="container-fluid">
-      <div class="row">
-        <div class="col-6 px-0">
+    <section class="container-fluid px-0">
+      <div class="row align-items-center">
+        <div class="col-md-6 px-0 order-2 order-md-2">
           <img class="img-fluid" src="icons/image2.jpg" alt="" />
         </div>
-        <div class="col-6">
-          From weddings to birthday parties, and everything in between, we've
-          got you covered! Reach out to us today to get a quote on your custom
-          sweet treat. If you can dream it, we can make it!
+        <div class="col-md-6 order-1 order-md-1">
+          <div class="row">
+            <div class="col-lg-2 col-1"></div>
+            <div class="col-lg-8 col-10" id="section3">
+              <p>
+                From weddings to birthday parties, and everything in between,
+                we've got you covered!
+              </p>
+              <h3>
+                Reach out to us today to get a quote on your custom sweet treat.
+              </h3>
+              <h4>If you can dream it, we can make it !!!</h4>
+            </div>
+            <div class="col-lg-2 col-1"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid px-0" id="content">
+      <div class="row align-items-center">
+        <div class="col-md-6 px-0 order-2 order-md-1">
+          <img class="img-fluid" src="icons/img1.jpg" alt="" />
+        </div>
+        <div id="section2" class="col-md-6 order-1 order-md-2">
+          <div class="row">
+            <div class="col-1 col-lg-2"></div>
+            <div class="col-10 col-lg-8" id="section2-content">
+              <h4>TORONTO'S FAVOURITE CUPCAKES</h4>
+              <p>
+                we bake on-site in small batches throughout the day to ensure
+                our gourmet cupcakes are freshly baked within hours, if not
+                minutes, for your enjoyment.
+              </p>
+            </div>
+            <div class="col-1 col-lg-2"></div>
+          </div>
+          <!-- <i class="fa-solid fa-cupcake"></i> -->
         </div>
       </div>
     </section>
@@ -123,7 +157,7 @@
       </div>
     </div>
     </div> -->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -134,5 +168,22 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $("#mainNavbar");
+
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+    <!-- <script>
+      $(function () {
+        $(document).scroll(function () {
+          const $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script> -->
   </body>
 </html>
