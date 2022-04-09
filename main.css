@@ -33,22 +33,44 @@ body {
   margin-top: 100px;
 } */
 
-#section2-content{
+#section2-content {
   color: #f6c751;
   font-weight: 100;
   font-size: 1.2rem;
- font-weight: 100;
- margin-top: 20px;
+  font-weight: 100;
+  margin-top: 20px;
 }
-#section2-content h4{
+#section2-content h4 {
   font-size: 1.5rem;
   font-weight: 100;
   margin-bottom: 25px;
 }
-#section2-content h3{
+#section2-content h3 {
   font-size: 1.5rem;
   margin-bottom: 25px;
   color: white;
+}
+
+#section3 p,h4 {
+  color: white;
+  font-weight: 100;
+  font-size: 1.5rem;
+  font-weight: 100;
+    margin-top: 20px;
+
+}
+#section3 h3  {
+  color: #f6c751;
+  font-weight: 100;
+  font-size: 1.4rem;
+  font-weight: 100;
+    margin-top: 20px;
+
+}
+
+.navbar.scrolled {
+background-color: black;
+transition:background-color 1s ;
 }
 @media (max-width: 1150px) {
   #cupcakeGroup h2 {
